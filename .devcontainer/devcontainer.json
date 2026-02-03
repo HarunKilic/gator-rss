@@ -1,0 +1,21 @@
+{
+    "name": "Mise Devcontainer",
+    "dockerComposeFile": [
+        "./compose.yaml"
+    ],
+    "service": "app",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "customizations": {
+        "vscode": {
+            "extensions": []
+        }
+    },
+    "postCreateCommand": "mise trust -- --non-interactive && mise install --yes",
+    "postAttachCommand": "",
+    "forwardPorts": [
+        3000,
+        8000,
+        5173
+    ],
+    "remoteUser": "root"
+}
