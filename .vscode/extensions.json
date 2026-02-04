@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "hverlin.mise-vscode",
+        "golang.go",
+        "Anthropic.claude-code",
+        "ckolkman.vscode-postgres"
+    ]
+}
